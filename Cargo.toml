@@ -1,0 +1,15 @@
+[package]
+name = "ffmpeg-fandisp"
+version = "0.1.0"
+authors = ["lamaboy <lamaboy2012@126.com>"]
+edition = "2018"
+
+[dependencies]
+#ffmpeg= "*"
+libloading = "*"
+
+[dependencies.ffmpeg-sys]
+path = "src/ffmpeg-sys"
+version = "2.8.9"
+#default-features = false
+#features = ["avcodec", "avformat", "swresample", "build", "static"]
