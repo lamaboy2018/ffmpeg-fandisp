@@ -1,12 +1,13 @@
 extern crate libloading as lib;
-extern crate ffmpeg_sys;
+extern crate ffmpeg;
 
-use ffmpeg_sys::av_register_all;
-
+use libffmpeg::format::register_all;
+use libffmpeg::format::version;
 fn main() {
-    unsafe {
-        ffmpeg_sys::av_register_all();
-        av_register_all() };
+  /*  unsafe {
+        let ver= version();
+        println!("ver ={}",ver);
+        register_all() };*/
     println!("Hello, world!");
 }
 
