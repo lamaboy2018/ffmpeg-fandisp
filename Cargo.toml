@@ -8,6 +8,7 @@ edition = "2018"
 #ffmpeg= "0.2.0-alpha.1"
 libloading = "*"
 
+
 [dependencies.ffmpeg]
 path = "ffmpeg"
 #version = "2.8.9"
